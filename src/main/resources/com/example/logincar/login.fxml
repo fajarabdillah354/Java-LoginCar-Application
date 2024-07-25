@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logincar.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #95bae4;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="82.0" layoutY="102.0" text="Pluto" textFill="#1b1111" wrapText="true">
+               <font>
+                  <Font name="Verdana Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="73.20001220703125" endY="-1.52587890625E-5" layoutX="114.0" layoutY="146.0" startX="-72.39999389648438" startY="-1.52587890625E-5" strokeWidth="3.0" />
+            <Label layoutX="52.0" layoutY="163.0" text="Car Rental">
+               <font>
+                  <Font name="Verdana Bold" size="21.0" />
+               </font>
+            </Label>
+            <Circle fill="#051b30" layoutX="113.0" layoutY="163.0" opacity="0.22" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#1c5a94" layoutX="32.0" layoutY="102.0" opacity="0.48" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label alignment="CENTER" layoutX="20.0" layoutY="353.0" prefHeight="18.0" prefWidth="185.0" style="-fx-background-color: #ffffff;" text="Integrity, Trusty, Compassion" underline="true">
+               <font>
+                  <Font name="Verdana Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="407.0" prefWidth="337.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cancelbutton" layoutX="26.0" layoutY="290.0" mnemonicParsing="false" onAction="#cancelButtonActions" prefHeight="30.0" prefWidth="277.0" style="-fx-background-color: #222cfd;" text="Cancel" textFill="#faf4f4">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="46.0" prefHeight="18.0" prefWidth="286.0" text="ADMIN LOGIN" underline="true">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="147.0" text="Username">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="129.0" layoutY="141.0" prefHeight="27.0" prefWidth="165.0" promptText="username" />
+            <PasswordField fx:id="passwordTextField" layoutX="129.0" layoutY="187.0" prefHeight="26.0" prefWidth="166.0" promptText="password" />
+            <Label layoutX="25.0" layoutY="192.0" text="Password">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" defaultButton="true" layoutX="26.0" layoutY="246.0" mnemonicParsing="false" onAction="#massageButtonEvent" prefHeight="30.0" prefWidth="277.0" style="-fx-background-color: #222cfd;" text="Login" textFill="#efeaea">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="massageButton" alignment="CENTER" layoutX="3.0" layoutY="83.0" prefHeight="20.0" prefWidth="330.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

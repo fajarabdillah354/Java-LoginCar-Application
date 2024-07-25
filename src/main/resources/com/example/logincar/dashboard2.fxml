@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logincar.LoginController">
+    <left>
+        <AnchorPane prefHeight="349.0" prefWidth="143.0" BorderPane.alignment="CENTER">
+            <children>
+                <FontAwesomeIconView glyphName="USER" layoutX="61.0" layoutY="47.0" size="35" />
+                <Label layoutX="47.0" layoutY="52.0" text="ADMIN">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Line endX="38.20001220703125" layoutX="101.0" layoutY="80.0" startX="-100.0" strokeWidth="3.0" />
+                <Line endY="-181.0" layoutX="139.0" layoutY="181.0" startX="1.52587890625E-5" startY="318.5999755859375" strokeWidth="3.0" />
+                <FontAwesomeIconView glyphName="USERS" layoutX="61.0" layoutY="116.0" size="20" text="" />
+                <FontAwesomeIconView glyphName="CAR" layoutX="59.0" layoutY="247.0" size="20" />
+                <Button fx:id="keluarDashboard" layoutX="28.0" layoutY="444.0" mnemonicParsing="false" onAction="#exitDashboard" prefHeight="29.0" prefWidth="84.0" style="-fx-background-color: #e66464;" text="Keluar">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="simpanDashboard2" layoutX="28.0" layoutY="402.0" mnemonicParsing="false" onAction="#simpanDashboard2" style="-fx-background-color: #41ea5e;" text="Simpan">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+            <Button fx:id="dataPeminjam" layoutX="16.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnDataPeminjam" style="-fx-background-color: #0c90f3;" text="Data Peminjam">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="27.0" layoutY="258.0" mnemonicParsing="false" style="-fx-background-color: #0c90f3;" text="Data Mobil">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Line endX="38.20001220703125" layoutX="101.0" layoutY="378.0" startX="-100.0" strokeWidth="3.0" />
+            </children>
+        </AnchorPane>
+    </left>
+    <top>
+        <AnchorPane prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #0e96fb;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="247.0" layoutY="12.0" text="DASHBOARD">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <right>
+        <AnchorPane prefHeight="434.0" prefWidth="443.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="42.0" prefHeight="57.0" prefWidth="448.0" text="DATA MOBIL" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="118.0" prefHeight="26.0" prefWidth="96.0" text="Kode">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputkode" layoutX="123.0" layoutY="118.0" prefHeight="26.0" prefWidth="240.0" />
+            <Label layoutX="27.0" layoutY="193.0" prefHeight="26.0" prefWidth="96.0" text="Nama Mobil">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mobil" layoutX="123.0" layoutY="193.0" prefHeight="26.0" prefWidth="240.0" />
+            <Label layoutX="27.0" layoutY="243.0" prefHeight="26.0" prefWidth="96.0" text="Transmisi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="manual" layoutX="123.0" layoutY="247.0" mnemonicParsing="false" selected="true" text="Manual">
+               <toggleGroup>
+                  <ToggleGroup fx:id="transmisi" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="auto" layoutX="211.0" layoutY="247.0" mnemonicParsing="false" text="Automatic" toggleGroup="$transmisi" />
+            <Label layoutX="27.0" layoutY="291.0" prefHeight="26.0" prefWidth="96.0" text="Kapasitas">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="kapasitas" layoutX="123.0" layoutY="291.0" prefWidth="240.0" />
+         </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
